@@ -1,0 +1,122 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+                                        /* Navigation Bar */
+
+.navBarDiv {
+    width: 100%;
+    background-color: #111111;
+    color: white;
+    padding: 0px;
+    text-align: center;
+    display: inline-block;
+    font-family: monospace;
+}
+.navBar ul {
+    padding: 0px;
+}
+.navBarDiv ul li {
+    display: inline;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 18px;
+}
+.navBarDiv ul li a {
+    text-decoration: none;
+    color: white;
+}
+.navBarDiv ul li a:hover {
+    color: #0094FF;
+}
+.headerLogo {
+    height: 50px;
+    position: absolute;
+    margin-top: -15px;
+    left: 310px;
+}
+
+                                        /* Drop Downs */
+
+.dropDown:hover li a {
+    color: #0094FF;
+}
+.dropDown {
+    display: inline-block;
+    height: 100%;
+    margin-top: -15px;
+    margin-bottom: -15px;
+    padding: 15px;
+}
+.dropDown .dropDownContent {
+    display: none;
+    margin-top: 13px;
+    position: absolute;
+    margin-left: 25px;
+    background-color: #222222;
+    min-width: 150px;
+    text-align: left;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-top: 5px solid #0094FF;
+}
+.dropDownContent a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+}
+.dropDownContent a:hover {
+    background-color: #333333;
+}
+.dropDown:hover .dropDownContent {
+    display: block;
+}
+
+                                        /* Body */
+
+.homePageCaption {
+    width: 500px;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    border-left: 5px solid #0094FF;
+    background-color: rgba(17, 17, 17, .75);
+    color: white;
+    padding: 25px;
+}
+.homePageCaption h2 {
+    font-family: monospace;
+}
+.homePageCaption p {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.captionLogo {
+    position: absolute;
+    height: 300px;
+    right: 150px;
+    top: 130px;
+}
+.bodyH1 {
+    font-family: monospace;
+    text-align: center;
+    font-size: 3em;
+    color: #333333;
+}
+.bodyP {
+    width: 35%;
+    margin: auto;
+    font-size: 18px;
+    color: #222222;
+    font-family: sans-serif;
+    text-align: center;
+}
+.centeredVideo {
+    width: 750px;
+    margin: auto;
+    display: block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
