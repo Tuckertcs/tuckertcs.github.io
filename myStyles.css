@@ -1,0 +1,67 @@
+/* Tucker S */
+:root {
+	/* dark base colors */
+    --base1Dark: var(--blackDark);
+    --base1Medium: var(--blackMedium);
+    --base1light: var(--blackLight);
+	
+	/* light base colors */
+	--base2Dark: var(--whiteDark);
+    --base2Medium: var(--whiteMedium);
+    --base2light: var(--whiteLight);
+    
+    /* primary colors */
+    --primary: var(--cyan);
+    --primaryDark: var(--cyanDark);
+    
+    /* #FF3232 #AF2323 greens? */
+    
+    /* secondary colors */
+    --secondary: var(--red);
+    --secondaryDark: var(--redDark);
+}
+
+html {
+    background-color: var(--base2Medium);
+}
+
+
+
+
+
+
+
+/* ---------- Sites Boxes ---------- */
+.floatingDivContainer {
+	width: 100%;
+	text-align: center;
+	font-family: monospace;
+	margin: 0px;
+	padding: 0px;
+}
+.divBlock {
+	width: 100px;
+	display: inline-block;
+	margin: 10px;
+}
+.divBlock .img {
+	width: 100%;
+	height: 100px;
+	background-color: black;
+}
+.img img {
+	width: 100%;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.divBlock .p {
+	color: black;
+	width: 100%;
+}
+.p p {
+	width: 100%;
+}
+.a {
+	text-decoration: none;
+}
