@@ -1,0 +1,326 @@
+/* -------------------- Initialize -------------------- */
+
+:root {
+	/* dark bw colors */
+    --baseDarkDark: #111111; /* dark gray */
+    --baseMediumDark: #222222; /* medium gray */
+    --baselightDark: #333333; /* light gray */
+    
+    /* primary colors */
+    --primaryMedium: #0094FF; /* blue */
+    --primaryDark: #004A7F; /* darker blue */
+    
+    /* #FF3232 #AF2323 */
+    
+    /* secondary colors */
+    --secondaryMedium: #FF3232; /* red */
+    --secondaryDark: #AF2323; /* dark red */
+    
+    /* light bw colors */
+    --baseMediumLight: #E5E5E5; /* very light gray */
+    --baseLightLight: #F7F7F7; /* almost white */
+	--baseWhite: white; /* white */
+    --baseDarkLight: #999999; /* light gray */
+}
+@font-face {
+	font-family: tall;
+	src: url(fonts/OstrichSans-Medium.otf);
+}
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    background-color: var(--baseMediumLight);
+}
+
+/* -------------------- Navigation Bar -------------------- */
+
+.navBarDiv {
+    width: 100%;
+	position: fixed;
+    background-color: var(--baseDarkDark);
+    color: var(--baseWhite);
+    padding: 0px;
+    padding-top: 0px;
+    text-align: center;
+    display: inline-block;
+    font-family: monospace;
+    position: relative;
+    z-index: 4;
+	border-bottom: solid var(--primaryMedium) 4px;
+}
+.navBar ul {
+    padding: 0px;
+}
+.navBarDiv ul li {
+    display: inline;
+    padding-right: 50px;
+    font-size: 20px;
+    background-color: var(--baseDarkDark);
+    border-bottom: 13px solid var(--baseDarkDark);
+    border-top: 46px solid var(--baseDarkDark);
+}
+.navBarDiv ul li a {
+    text-decoration: none;
+    color: var(--baseWhite);
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    transition: color .25s;
+}
+.navBarDiv ul li a:hover {
+    color: var(--primaryMedium);
+}
+.headerLogo {
+    padding-right: 25px;
+	position: absolute;
+	height: 35px;
+	left: 9px;
+	top: 9px;
+}
+.iconColored {
+	color: var(--primaryMedium);
+}
+
+/* -------------------- Drop Downs -------------------- */
+
+.dropDown li {
+    position: relative;
+    z-index: 10000;
+}
+.dropDown {
+    position: relative;
+    display: inline-block;
+	z-index: 1000;
+}
+.dropDown:hover li a {
+    color: var(--primaryMedium);
+}
+.dropDownContent {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.2); /* BOX SHADOWS TEMPLATE */
+	text-align: left;
+	padding-top: 4px;
+	background-color: var(--primaryMedium);
+}
+.dropDownContent a {
+    color: var(--baseWhite);
+    font-size: 14px;
+    background-color: var(--primaryMedium);
+    -webkit-transition: background-color .25s;
+    -moz-transition: background-color .25s;
+    transition: background-color .25s;
+    padding: 10px 10px;
+    text-decoration: none;
+    display: block;
+}
+.dropDownContent a:hover {
+    background-color: var(--primaryDark);
+}
+.dropDown:hover .dropDownContent {
+	margin-top: 13px;
+	display: block;
+}
+
+/* -------------------- Body -------------------- */
+
+.bodyDivFull {
+    margin: auto;
+    padding: 15px;
+    margin-top: 0;
+}
+.bodyDivSkinny {
+    margin: auto;
+    padding: 15px;
+    margin-top: 0;
+    width: 50%; /* body width */
+}
+.blackBar {
+    color: var(--baseDarkDark);
+}
+
+/* -------------------- Slide Show Header -------------------- */
+
+.headBar {
+	height: 500px;
+	object-fit: cover;
+	margin: -15px;
+	padding: 0px;
+	width: calc(100% + 30px);
+}
+.headBar img {
+    object-fit: cover;
+    height: 100%;
+}
+.headBox {
+	position: absolute;
+	width: 500px;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, .75);
+	border-left: solid var(--primaryMedium) 4px;
+	left: 200px;
+	top: 150px;
+	z-index: 0;
+}
+.headBox h1 {
+    color: var(--baseWhite);
+    font-family: tall;
+	font-size: 3.5em;
+	margin: 0px;
+	padding: 0px;
+	margin-top: -10px;
+}
+
+/* -------------------- Project Page -------------------- */
+.firstImageBlock {
+    margin: 10px;
+    display: flex;
+    flex: 1;
+}
+.titleImage {
+	width: 100%;
+    margin: auto;
+}
+.stepTitle {
+    padding: 10px;
+    color: var(--baseDarkDark);
+    font-family: tall;
+	font-size: 4em;
+	text-align: left; /* CENTERED TITLES OR LEFT TITLE */
+}
+.stepText {
+    margin: 10px;
+    font-family: sans-serif;
+    color: var(--baseDarkDark);
+    font-size: 18px;
+}
+.materialsList {
+	list-style-type: none;
+	font-family: sans-serif;
+    color: var(--baseDarkDark);
+    font-size: 18px;
+}
+
+/* -------------------- Homepage -------------------- */
+
+.homePageCaption {
+    width: 500px;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    border-left: 5px solid var(--primaryMedium);
+    background-color: rgba(17, 17, 17, .75);
+    color: white;
+    padding: 25px;
+}
+.homePageCaption h2 {
+    font-family: monospace;
+}
+.homePageCaption p {
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+.captionHeader {
+    color: white;
+}
+/* -------------------- Project Boxes -------------------- */
+.projectGridHolder {
+    margin: auto;
+    text-align: center;
+	text-decoration: none;
+}
+.projectGridHolder a {
+	text-decoration: none;
+}
+.projectBox {
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    display: inline-block;
+    background-color: var(--baseDarkDark);
+    border: solid var(--primaryMedium) 4px;
+	box-shadow: none;
+	-webkit-transition: box-shadow .25s;
+    -moz-transition: box-shadow .25s;
+    transition: box-shadow .25s;
+	text-decoration: none;
+}
+.projectBox:hover {
+	box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.5);
+}
+.projectBox img {
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+	text-decoration: none;
+}
+.projectBox h2 {
+    color: var(--baseLightLight);
+    -webkit-transition: color .25s;
+    -moz-transition: color .25s;
+    transition: color .25s;
+    font-family: monospace;
+    padding: 10px;
+    margin-top: -5px;
+    text-align: left;
+	text-decoration: none;
+}
+.projectBox:hover h2 {
+    color: var(--primaryMedium);
+	text-decoration: none;
+}
+
+/* -------------------- Contact -------------------- */
+
+input[type=text]:focus {
+    border: 4px solid var(--primaryMedium);
+	margin: 10px;
+}
+input[type=text] {
+    border: 4px solid var(--primaryMedium);
+	margin: 10px;
+}
+.form {
+	margin-bottom: -10px;
+}
+button {
+	margin: 10px;
+	
+	background-color: var(--primaryMedium); /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+	font-family: monospace;
+    cursor: pointer;
+	
+	-webkit-transition: background-color .25s;
+    -moz-transition: background-color .25s;
+    transition: background-color .25s;
+}
+button:hover {
+	background-color: var(--primaryDark);
+}
+#contact {
+	width: 200px;
+    height: 358px;
+    margin-top: 100px;
+    display: block;
+    background-color: var(--baseDarkDark);
+    border: solid var(--primaryMedium) 4px;
+	box-shadow: none;
+	-webkit-transition: box-shadow .25s;
+    -moz-transition: box-shadow .25s;
+    transition: box-shadow .25s;
+	margin: auto;
+}
+#contact:hover h2 {
+    color: whtie !important;
+}
+.contactMargin {
+	height: 100px;
+}
