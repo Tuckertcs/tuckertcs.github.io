@@ -11,6 +11,7 @@ body {
     margin: auto;
     padding-left: 30px;
     padding-right: 30px;
+    margin-bottom: -16px;
     width: 818px;
     background-color: rgb(230, 230,230);
     box-shadow: 0px 0px 16px darkgreen;
@@ -157,7 +158,6 @@ body {
     padding-top: 2px;
     padding-bottom: 2px;
     font-family: sans-serif;
-    /* border: 2px solid lightgrey; */
 }
 
 .caption a:link {
@@ -189,4 +189,22 @@ body {
 
 .right {
     float: right;
+}
+
+#footer {
+    color: rgb(175, 175, 175);
+    padding-bottom: 16px;
+    font-size: 0.75em;
+}
+#footer a:link {
+    color: rgb(175, 175, 175)
+}
+#footer a:visited {
+    color: grey;
+}
+#footer a:hover {
+    color: grey;
+}
+#footer a:active {
+    color: lightgrey;
 }
