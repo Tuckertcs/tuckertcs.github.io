@@ -1,5 +1,7 @@
 /*----- BODY -----*/
 
+
+
 body {
     margin: 0;
     padding: 0;
@@ -7,19 +9,22 @@ body {
 }
 #body-div {
     margin: auto;
-    padding-left: 32px;
-    padding-right: 32px;
-    width: 808px;
-    /*border-left: 2px solid lightgrey;
-    border-right: 2px solid lightgrey;*/
-    background-color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 818px;
+    background-color: rgb(230, 230,230);
+    box-shadow: 0px 0px 16px darkgreen;
 }
 
 #box-div {
     margin: auto;
 }
 
+
+
 /*----- FORM -----*/
+
+
 
 #seed-form {
     text-align: center;
@@ -27,7 +32,9 @@ body {
 }
 
 #seed-form th {
-    border: 2px solid rgb(81, 120, 188) !important;
+    border: 2px solid rgb(230, 230, 230);
+    box-shadow: inset 0px 0px 0px 2px rgb(75, 114, 182);
+    padding: 2px;
 }
 
 #form-button {
@@ -76,42 +83,62 @@ body {
     background-color: cornflowerblue;
 }
 
+
+
 /*----- TABLE -----*/
+
+
 
 .box-table {
     margin: auto;
     empty-cells: show;
     text-align: center;
 }
+.box-table tr td {
+    margin: 4px !important;
+}
 
 .box-title {
     background-color: white;
     column-span: all;
-    border: 2px solid lightgrey;
+    
+    /*border: 2px solid lightgrey;*/
+    
+    border: 2px solid rgb(230, 230, 230);
+    box-shadow: inset 0px 0px 0px 2px rgb(0, 91, 91);
+    padding: 2px;
+    
     font-size: 24px;
     font-family: sans-serif;
     background-color: darkcyan;
-    border: 2px solid rgb(0, 91, 91) !important;
+    /*border: 2px solid rgb(0, 91, 91) !important;*/
 }
+
+
 
 /*-----TABLE, BOX -----*/
 
+
+
 .box-image {
-    width: 128px;
-    height : 128px;
-    margin: 4px;
-    padding: 0;
-    padding-bottom: -5px;
-    border: 2px solid lightgrey;
+    border-collapse: seperate !important;
+    border-spacing: 2px 2px !important;
+    width: 130px;
+    height: 130px;
+    border: 2px solid rgb(230, 230, 230);
+    
+    box-shadow: inset 0px 0px 0px 2px lightgrey;
+    padding: 2px;
+    padding-left: 4px;
+    padding-bottom: 0px;
+    
     background-color: white;
-    
-    
-    
+    background-repeat: no-repeat;
+    background-position: center;
+
     color: grey;
-    text-outline: 1px 1px white;
     text-align: left;
     vertical-align: top;
-    padding-left: 2px;
     font-size: 12px;
 }
 
@@ -120,7 +147,11 @@ body {
     filter: grayscale(100%);
 }
 
+
+
 /*----- TABLE, CAPTION -----*/
+
+
 
 .caption {
     padding-top: 2px;
@@ -146,7 +177,11 @@ body {
     text-decoration: none;
 }
 
+
+
 /*----- GENERAL -----*/
+
+
 
 .left {
     float: left;
