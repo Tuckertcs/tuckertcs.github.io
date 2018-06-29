@@ -82,6 +82,14 @@ body {
 #th-load {
     width: 128px;
     background-color: cornflowerblue;
+    
+    /* can't select text' */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
@@ -112,7 +120,14 @@ body {
     font-size: 24px;
     font-family: sans-serif;
     background-color: darkcyan;
-    /*border: 2px solid rgb(0, 91, 91) !important;*/
+    
+    /* can't select text' */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 
@@ -141,11 +156,29 @@ body {
     text-align: left;
     vertical-align: top;
     font-size: 12px;
+    
+    /* can't select text' */
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .none {
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
+    opacity: 0.75;
+}
+.shiny:after {
+    content: url("images/star.png");
+    display: block;
+    margin-top: 110px;
+    margin-right: 1px;
+    padding: 0;
+    float: right;
+    float: bottom;
 }
 
 
@@ -208,5 +241,3 @@ body {
 #footer a:active {
     color: lightgrey;
 }
-
-/*--- 6/29/2018 12:40AM ---*/

@@ -20,8 +20,11 @@
 // --------------- GLOBAL VARIABLES --------------- //
 
 
-//how many pokemon are there currently? remember to add new pokemon to tables as well in the HTML document!
+//current number of pokemon
 var TOTAL_POKEMON = 807;
+
+//number of pokemon boxes
+var TOTAL_BOXES = 27;
 
 //contains all pokemon names
 var POKEMON_INFO = ["Bulbasaur",
@@ -835,8 +838,11 @@ var POKEMON_INFO = ["Bulbasaur",
 //serebii link (before number, after number)
 var SEREBII_LINK = ["https://www.serebii.net/pokedex-sm/", ".shtml"];
 
-//pokemon image file directories (file extension, normal, shiny)
-var IMAGE_DIR = [".gif", "url('images/3d-128/", "url('images/3d-128-shiny/"];
+//pokemon image file directories (file extension, normal, shiny, red shiny star)
+var IMAGE_DIR = [".gif",
+                 "url('images/3d-128/",
+                 "url('images/3d-128-shiny/",
+                 "<img src='images/star.png' class='star'>"];
 
 //codes for SEED, POKEMON_DATA, and classes
 var S = ["0", "1", "2", "#",
@@ -858,6 +864,8 @@ for (ii = 0; ii <= TOTAL_POKEMON; ii += 1) {
 //string of numbers to save all checkbox states (input/output)
 var SEED = "";
 
+//current box viewed (0 is top of page)
+var CURRENT_BOX = 0;
 
 // --------------- FUNCTIONS --------------- //
 
@@ -1002,8 +1010,6 @@ function updateCaptions() {
     }
 }
 
-
-
 //click on checkbox event
 function boxClickEvent(box) {
     //check state class, decide new state class, remove state class
@@ -1025,21 +1031,33 @@ function boxClickEvent(box) {
     
     //mark as clicked
     box.classList.add("clicked");
-    //loop through all checkboxes, find one marked for changing
     var cells = document.getElementsByClassName("box-image"),
         i = 0;
+    //loop through all checkboxes, find one marked for changing
     for (i = 0; i < cells.length; i += 1) {
         //if marked as clicked
         if (cells.item(i).classList.contains("clicked")) {
             //update POKEMON_DATA based on new state
             if (cells.item(i).classList.contains(S[5])) { //have pokemon
                 POKEMON_DATA[i + 1] = S[5];
+                //remove shiny class
+                if (cells.item(i).classList.contains("shiny")) {
+                    box.classList.remove("shiny");
+                }
             }
-            if (cells.item(i).classList.contains(S[6])) { //have pokemon
+            if (cells.item(i).classList.contains(S[6])) { //shiny pokemon
                 POKEMON_DATA[i + 1] = S[6];
+                //add shiny class
+                if (!cells.item(i).classList.contains("shiny")) {
+                    box.classList.add("shiny");
+                }
             }
-            if (cells.item(i).classList.contains(S[4])) { //have pokemon
+            if (cells.item(i).classList.contains(S[4])) { //none pokemon
                 POKEMON_DATA[i + 1] = S[4];
+                //remove shiny class
+                if (cells.item(i).classList.contains("shiny")) {
+                    box.classList.remove("shiny");
+                }
             }
         }
     }
@@ -1049,6 +1067,33 @@ function boxClickEvent(box) {
     updateSeed();
     //update checkbox table with new POKEMON_DATA
     updateTable();
+}
+
+//scroll to CURRENT_BOX
+function scrollBox(up) {
+    
+    var scroll_to = document.getElementsByTagName("body");
+    
+    //box up or down
+    if (up) {
+        if (CURRENT_BOX > 0) {
+            CURRENT_BOX -= 1;
+        }
+    } else {
+        if (CURRENT_BOX < TOTAL_BOXES) {
+            CURRENT_BOX += 1;
+        }
+    }
+    
+    //title or box
+    if (CURRENT_BOX === 0) {
+        scroll_to = document.getElementsByTagName("body")[0];
+    } else {
+        scroll_to = document.getElementById("box-table-" + CURRENT_BOX.toString());
+    }
+    
+    //scroll to element
+    scroll_to.scrollIntoView(true);
 }
 
 //run things on page load
@@ -1064,5 +1109,3 @@ function pageLoad() {
 
 //page load
 window.onload = pageLoad;
-
-/*--- 6/29/2018 12:40AM ---*/

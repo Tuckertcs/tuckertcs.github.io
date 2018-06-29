@@ -1,4 +1,6 @@
-<!--- Tucker Sandin --->
+<!---   Tucker Sandin   --->
+<!--- 6/29/2018 1:11PM --->
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,7 +10,11 @@
         <script src="script.js"></script>
     </head>
     <body>
+        
+        <!--- Body Div --->
         <div id="body-div">
+            
+            <!--- Seed Form --->
             <br>
             <form id="seed-form">
                 <table class="box-table">
@@ -21,14 +27,17 @@
                 
                 <br>
             </form>
+            
+            <!--- Box Div --->
             <div id="box-div">
+                
 <!--- ------------------------- BOX 1 ------------------------- --->
                 <table class="box-table" id="box-table-1">
                     <!--- Title Row --->
                     <tr>
-                        <th class="box-title">001</th>
+                        <th class="box-title" onclick="scrollBox(true)">001</th>
                         <th class="box-title" colspan="4">Box 1</th>
-                        <th class="box-title">030</th>
+                        <th class="box-title" onclick="scrollBox(false)">030</th>
                     </tr>
                     <!--- Box Row 1 --->
                     <tr class="box-row">
@@ -120,10 +129,10 @@
                         <td class="caption"><a class="captiona"></a></td>
                         <td class="caption"><a class="captiona"></a></td>
                     </tr>
-                </table><br><br>
+                </table><br><br><br>
 <!--- ------------------------- BOX 2 ------------------------- --->
                 <table class="box-table" id="box-table-2">
-                    <!--- Title Row ---><tr><th class="box-title">031</th><th class="box-title" colspan="4">Box 2</th><th class="box-title">060</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">031</th><th class="box-title" colspan="4">Box 2</th><th class="box-title" onclick="scrollBox(false)">060</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -137,7 +146,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 3 ------------------------- --->
                 <table class="box-table" id="box-table-3">
-                    <!--- Title Row ---><tr><th class="box-title">061</th><th class="box-title" colspan="4">Box 3</th><th class="box-title">090</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">061</th><th class="box-title" colspan="4">Box 3</th><th class="box-title" onclick="scrollBox(false)">090</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -151,7 +160,21 @@
                 </table><br><br>
 <!--- ------------------------- BOX 4 ------------------------- --->
                 <table class="box-table" id="box-table-4">
-                    <!--- Title Row ---><tr><th class="box-title">091</th><th class="box-title" colspan="4">Box 4</th><th class="box-title">120</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">091</th><th class="box-title" colspan="4">Box 4</th><th class="box-title" onclick="scrollBox(false)">120</th></tr>
+                    <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
+                    <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
+                    <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
+                    <!--- Caption Row 2 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
+                    <!--- Box Row 3 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
+                    <!--- Caption Row 3 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
+                    <!--- Box Row 4 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
+                    <!--- Caption Row 4 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
+                    <!--- Box Row 5 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
+                    <!--- Caption Row 5 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
+                </table><br><br>
+<!--- ------------------------- BOX 5 ------------------------- --->
+                <table class="box-table" id="box-table-5">
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">121</th><th class="box-title" colspan="4">Box 5</th><th class="box-title" onclick="scrollBox(false)">150</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -165,7 +188,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 6 ------------------------- --->
                 <table class="box-table" id="box-table-6">
-                    <!--- Title Row ---><tr><th class="box-title">121</th><th class="box-title" colspan="4">Box 6</th><th class="box-title">150</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">151</th><th class="box-title" colspan="4">Box 6</th><th class="box-title" onclick="scrollBox(false)">180</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -179,7 +202,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 7 ------------------------- --->
                 <table class="box-table" id="box-table-7">
-                    <!--- Title Row ---><tr><th class="box-title">151</th><th class="box-title" colspan="4">Box 7</th><th class="box-title">180</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">181</th><th class="box-title" colspan="4">Box 7</th><th class="box-title" onclick="scrollBox(false)">210</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -193,7 +216,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 8 ------------------------- --->
                 <table class="box-table" id="box-table-8">
-                    <!--- Title Row ---><tr><th class="box-title">181</th><th class="box-title" colspan="4">Box 8</th><th class="box-title">210</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">211</th><th class="box-title" colspan="4">Box 8</th><th class="box-title" onclick="scrollBox(false)">240</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -207,7 +230,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 9 ------------------------- --->
                 <table class="box-table" id="box-table-9">
-                    <!--- Title Row ---><tr><th class="box-title">211</th><th class="box-title" colspan="4">Box 9</th><th class="box-title">240</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">241</th><th class="box-title" colspan="4">Box 9</th><th class="box-title" onclick="scrollBox(false)">270</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -221,7 +244,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 10 ------------------------- --->
                 <table class="box-table" id="box-table-10">
-                    <!--- Title Row ---><tr><th class="box-title">241</th><th class="box-title" colspan="4">Box 10"</th><th class="box-title">270</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">271</th><th class="box-title" colspan="4">Box 10</th><th class="box-title" onclick="scrollBox(false)">300</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -235,7 +258,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 11 ------------------------- --->
                 <table class="box-table" id="box-table-11">
-                    <!--- Title Row ---><tr><th class="box-title">271</th><th class="box-title" colspan="4">Box 11</th><th class="box-title">300</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">301</th><th class="box-title" colspan="4">Box 11</th><th class="box-title" onclick="scrollBox(false)">330</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -249,7 +272,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 12 ------------------------- --->
                 <table class="box-table" id="box-table-12">
-                    <!--- Title Row ---><tr><th class="box-title">301</th><th class="box-title" colspan="4">Box 12</th><th class="box-title">330</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">331</th><th class="box-title" colspan="4">Box 12</th><th class="box-title" onclick="scrollBox(false)">360</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -263,7 +286,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 13 ------------------------- --->
                 <table class="box-table" id="box-table-13">
-                    <!--- Title Row ---><tr><th class="box-title">331</th><th class="box-title" colspan="4">Box 13</th><th class="box-title">360</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">361</th><th class="box-title" colspan="4">Box 13</th><th class="box-title" onclick="scrollBox(false)">390</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -277,7 +300,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 14 ------------------------- --->
                 <table class="box-table" id="box-table-14">
-                    <!--- Title Row ---><tr><th class="box-title">361</th><th class="box-title" colspan="4">Box 14</th><th class="box-title">390</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">391</th><th class="box-title" colspan="4">Box 14</th><th class="box-title" onclick="scrollBox(false)">420</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -291,7 +314,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 15 ------------------------- --->
                 <table class="box-table" id="box-table-15">
-                    <!--- Title Row ---><tr><th class="box-title">391</th><th class="box-title" colspan="4">Box 15</th><th class="box-title">420</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">421</th><th class="box-title" colspan="4">Box 15</th><th class="box-title" onclick="scrollBox(false)">450</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -305,7 +328,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 16 ------------------------- --->
                 <table class="box-table" id="box-table-16">
-                    <!--- Title Row ---><tr><th class="box-title">421</th><th class="box-title" colspan="4">Box 16</th><th class="box-title">450</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">451</th><th class="box-title" colspan="4">Box 16</th><th class="box-title" onclick="scrollBox(false)">480</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -319,7 +342,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 17 ------------------------- --->
                 <table class="box-table" id="box-table-17">
-                    <!--- Title Row ---><tr><th class="box-title">451</th><th class="box-title" colspan="4">Box 17</th><th class="box-title">480</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">481</th><th class="box-title" colspan="4">Box 17</th><th class="box-title" onclick="scrollBox(false)">510</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -333,7 +356,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 18 ------------------------- --->
                 <table class="box-table" id="box-table-18">
-                    <!--- Title Row ---><tr><th class="box-title">481</th><th class="box-title" colspan="4">Box 18</th><th class="box-title">510</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">511</th><th class="box-title" colspan="4">Box 18</th><th class="box-title" onclick="scrollBox(false)">540</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -347,7 +370,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 19 ------------------------- --->
                 <table class="box-table" id="box-table-19">
-                    <!--- Title Row ---><tr><th class="box-title">511</th><th class="box-title" colspan="4">Box 19</th><th class="box-title">540</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">541</th><th class="box-title" colspan="4">Box 19</th><th class="box-title" onclick="scrollBox(false)">570</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -361,7 +384,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 20 ------------------------- --->
                 <table class="box-table" id="box-table-20">
-                    <!--- Title Row ---><tr><th class="box-title">541</th><th class="box-title" colspan="4">Box 20</th><th class="box-title">570</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">571</th><th class="box-title" colspan="4">Box 20</th><th class="box-title" onclick="scrollBox(false)">600</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -375,7 +398,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 21 ------------------------- --->
                 <table class="box-table" id="box-table-21">
-                    <!--- Title Row ---><tr><th class="box-title">571</th><th class="box-title" colspan="4">Box 21</th><th class="box-title">600</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">601</th><th class="box-title" colspan="4">Box 21</th><th class="box-title" onclick="scrollBox(false)">630</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -389,7 +412,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 22 ------------------------- --->
                 <table class="box-table" id="box-table-22">
-                    <!--- Title Row ---><tr><th class="box-title">601</th><th class="box-title" colspan="4">Box 22</th><th class="box-title">630</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">631</th><th class="box-title" colspan="4">Box 22</th><th class="box-title" onclick="scrollBox(false)">660</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -403,7 +426,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 23 ------------------------- --->
                 <table class="box-table" id="box-table-23">
-                    <!--- Title Row ---><tr><th class="box-title">631</th><th class="box-title" colspan="4">Box 23</th><th class="box-title">660</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">661</th><th class="box-title" colspan="4">Box 23</th><th class="box-title" onclick="scrollBox(false)">690</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -417,7 +440,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 24 ------------------------- --->
                 <table class="box-table" id="box-table-24">
-                    <!--- Title Row ---><tr><th class="box-title">661</th><th class="box-title" colspan="4">Box 24</th><th class="box-title">690</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">691</th><th class="box-title" colspan="4">Box 24</th><th class="box-title" onclick="scrollBox(false)">720</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -431,7 +454,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 25 ------------------------- --->
                 <table class="box-table" id="box-table-25">
-                    <!--- Title Row ---><tr><th class="box-title">691</th><th class="box-title" colspan="4">Box 25</th><th class="box-title">720</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">721</th><th class="box-title" colspan="4">Box 25</th><th class="box-title" onclick="scrollBox(false)">750</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -445,7 +468,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 26 ------------------------- --->
                 <table class="box-table" id="box-table-26">
-                    <!--- Title Row ---><tr><th class="box-title">721</th><th class="box-title" colspan="4">Box 26</th><th class="box-title">750</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">751</th><th class="box-title" colspan="4">Box 26</th><th class="box-title" onclick="scrollBox(false)">780</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -459,21 +482,7 @@
                 </table><br><br>
 <!--- ------------------------- BOX 27 ------------------------- --->
                 <table class="box-table" id="box-table-27">
-                    <!--- Title Row ---><tr><th class="box-title">751</th><th class="box-title" colspan="4">Box 27</th><th class="box-title">780</th></tr>
-                    <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
-                    <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
-                    <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
-                    <!--- Caption Row 2 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
-                    <!--- Box Row 3 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
-                    <!--- Caption Row 3 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
-                    <!--- Box Row 4 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
-                    <!--- Caption Row 4 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
-                    <!--- Box Row 5 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
-                    <!--- Caption Row 5 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
-                </table><br><br>
-<!--- ------------------------- BOX 28 ------------------------- --->
-                <table class="box-table" id="box-table-28">
-                    <!--- Title Row ---><tr><th class="box-title">781</th><th class="box-title" colspan="4">Box 28</th><th class="box-title">810</th></tr>
+                    <!--- Title Row ---><tr><th class="box-title" onclick="scrollBox(true)">781</th><th class="box-title" colspan="4">Box 27</th><th class="box-title" onclick="scrollBox(false)">810</th></tr>
                     <!--- Box Row 1 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
                     <!--- Caption Row 1 ---><tr><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td><td class="caption"><a class="captiona"></a></td></tr>
                     <!--- Box Row 2 ---><tr class="box-row"><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td><td class="box-image" onclick="boxClickEvent(this)"></td></tr>
@@ -502,5 +511,3 @@
         </div>
     </body>
 </html>
-
-<!--- 6/29/2018 12:40AM --->
