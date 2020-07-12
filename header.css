@@ -1,0 +1,28 @@
+/* -------------------- Header -------------------- */
+
+.headBar {
+	height: 500px;
+	background-color: lightblue; /*----- REMOVE ONCE IMAGES ARE AVAILABLE! -----*/
+	margin: -15px;
+	padding: 0px;
+	width: calc(100% + 30px);
+}
+.headBox {
+	position: absolute;
+	width: 500px;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, .5);
+	border-left: solid var(--primaryMedium) 4px;
+	left: 200px;
+	top: 150px;
+	z-index: 0;
+}
+.headBox h1 {
+    color: var(--baseWhite);
+    font-family: tall;
+	font-size: 3.5em;
+	margin: 0px;
+	padding: 0px;
+	margin-top: -10px;
+}
+/* Testing 123 */
